@@ -343,17 +343,24 @@
           <div class="col-sm-6">
             <div class="skills-progress" id="skills">
 
-              <h6>JavaScript <span>100%</span></h6>
+              <h6>JavaScript <span>95%</span></h6>
               <div class="progress-solid meter">
                 <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar" role="progressbar">
                   <span class="sr-only">100%</span>
                 </div>
               </div>
 
-              <h6>HTML/CSS <span>70%</span></h6>
+              <h6>HTML/CSS <span>90%</span></h6>
               <div class="progress-solid meter">
                 <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="70" class="progress-bar" role="progressbar">
                   <span class="sr-only">70%</span>
+                </div>
+              </div>
+
+              <h6>React.js<span>80%</span></h6>
+              <div class="progress-solid meter">
+                <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar" role="progressbar">
+                  <span class="sr-only">100%</span>
                 </div>
               </div>
 
@@ -361,6 +368,13 @@
               <div class="progress-solid meter" id="animated-skills">
                 <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="90" class="progress-bar" role="progressbar">
                   <span class="sr-only">90%</span>
+                </div>
+              </div>
+
+              <h6>Mongo <span>90%</span></h6>
+              <div class="progress-solid meter">
+                <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar" role="progressbar">
+                  <span class="sr-only">100%</span>
                 </div>
               </div>
 
@@ -373,6 +387,22 @@
         </div>
       </div>
     </section> <!-- end progress bars -->
+    <div id="theGrid"class="modal portModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">The Grid</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>A single page application built using React.js. This application is designed for video game players to have a way of organizing social interactions and connecting with one another either online or in person. Users can add friends, create posts, comment on other posts, join clans and more! Mongo DB is the database that is used to store all the profile and user information while Heroku is the platform that hosts the application. User credential validation is important for use of the site, because the various different API endpoints are restricted to requests made that contain a valid JSON web token.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div id="nextGameModal"class="modal portModal" tabindex="-1" role="dialog">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -439,22 +469,6 @@
       </div>
     </div>
 
-    <div id="wordGuessModal"class="modal portModal" tabindex="-1" role="dialog">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">Object Oriented Word Guess</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <p>A command line interface that simulates the game Hang Man. Users guess letters for a word that is blanked out on the screen and the command line will update letting them know if they answered correcly, incorrectly, won or lost. JavaScript is not truly an object oriented language; however, this code utilizes constructor objects to generate the words and validate the user's responses in order to simulate an object oriented language to the best of its ability.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <div id="liriModal"class="modal portModal" tabindex="-1" role="dialog">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -483,6 +497,25 @@
         </div>
 
         <div class="grid-3-col grid-wide grid-gutter grayscale">
+
+          <div class="work-item web-design branding" onclick="void(0)">
+            <div class="work-img">
+              <img class= "portfolio-image" src="img/revolution/theGrid.png" alt="">
+              <div class="work-overlay">        
+                <div class="work-description">
+                  <h3>
+                    <a href="portfolio-single.html">The Grid</a>
+                  </h3>
+                  <span>
+                    <a href="https://github.com/charlesdanner/The_Grid">Code</a>
+                    <br>
+                    <a href="#" data-toggle="modal" data-target="#theGrid">Description</a>
+                  </span>
+                </div>
+                <a href="https://the-grid.herokuapp.com/" class="btn btn-lg btn-transparent" title="Word Guess">View Work</a>
+              </div>
+            </div>
+          </div> <!-- end work-item -->
 
           <div class="work-item web-design print" onclick="void(0)">
             <div class="work-img">
@@ -557,25 +590,6 @@
                   </span>
                 </div>
                 <a href="https://friendfindercharles.herokuapp.com/" class="btn btn-lg btn-transparent" title="Friend Finder">View Work</a>
-              </div>
-            </div>
-          </div> <!-- end work-item -->
-
-          <div class="work-item web-design branding" onclick="void(0)">
-            <div class="work-img">
-              <img class= "portfolio-image" src="img/revolution/wordConstructor.png" alt="">
-              <div class="work-overlay">        
-                <div class="work-description">
-                  <h3>
-                    <a href="portfolio-single.html">Object Oriented Word Guess</a>
-                  </h3>
-                  <span>
-                    <a href="https://github.com/charlesdanner/constructor-word-guess">Code</a>
-                    <br>
-                    <a href="#" data-toggle="modal" data-target="#wordGuessModal">Description</a>
-                  </span>
-                </div>
-                <a href="https://github.com/charlesdanner/constructor-word-guess/raw/master/recording/screen-recording.wmv" class="btn btn-lg btn-transparent" title="Word Guess">View Work</a>
               </div>
             </div>
           </div> <!-- end work-item -->
